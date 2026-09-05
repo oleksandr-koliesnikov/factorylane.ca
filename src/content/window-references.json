@@ -1,0 +1,303 @@
+{
+  "/windows/casement/": {
+    "installed": [
+      {
+        "label": "Small Casement (standard)",
+        "min": 400,
+        "max": 900,
+        "plus": false
+      },
+      {
+        "label": "Mid-Size Vinyl Casement",
+        "min": 700,
+        "max": 1200,
+        "plus": false
+      },
+      {
+        "label": "Large / Premium",
+        "min": 1200,
+        "max": 1800,
+        "plus": true
+      },
+      {
+        "label": "Custom / custom scope",
+        "min": 1500,
+        "max": 2200,
+        "plus": false
+      }
+    ],
+    "dimensions": [
+      ["Double Pane", "16 in", "15 in", "36 in", "70 in", "17 sq ft"],
+      ["Triple Pane", "16 in", "15 in", "30 in", "65 in", "14.5 sq ft"]
+    ]
+  },
+  "/windows/double-hung/": {
+    "installed": [
+      {
+        "label": "Smaller Double Hung",
+        "min": 700,
+        "max": 1300,
+        "plus": false
+      },
+      {
+        "label": "Standard Double Hung",
+        "min": 1000,
+        "max": 1800,
+        "plus": false
+      },
+      {
+        "label": "Taller Double Hung",
+        "min": 1500,
+        "max": 2500,
+        "plus": true
+      }
+    ],
+    "dimensions": [
+      ["Double Pane", "18 in", "30 in", "42 in", "72 in", "17 sq ft"]
+    ]
+  },
+  "/windows/bay/": {
+    "installed": [
+      {
+        "label": "All-Fixed Bay (3 Picture Windows)",
+        "min": 1800,
+        "max": 2800,
+        "plus": false
+      },
+      {
+        "label": "Casement Bay (Fixed + Operable)",
+        "min": 2200,
+        "max": 3800,
+        "plus": false
+      },
+      {
+        "label": "Custom Bay Configuration",
+        "min": 4500,
+        "max": 7000,
+        "plus": true
+      }
+    ],
+    "dimensions": []
+  },
+  "/windows/hopper/": {
+    "installed": [
+      {
+        "label": "Small Hopper",
+        "min": 300,
+        "max": 700,
+        "plus": false
+      },
+      {
+        "label": "Standard Hopper",
+        "min": 500,
+        "max": 1000,
+        "plus": false
+      },
+      {
+        "label": "Larger Hopper",
+        "min": 900,
+        "max": 1500,
+        "plus": true
+      }
+    ],
+    "dimensions": []
+  },
+  "/windows/tilt-and-turn/": {
+    "installed": [
+      {
+        "label": "Smaller Tilt and Turn",
+        "min": 900,
+        "max": 1800,
+        "plus": false
+      },
+      {
+        "label": "Standard Tilt and Turn",
+        "min": 1400,
+        "max": 2800,
+        "plus": false
+      },
+      {
+        "label": "Larger Tilt and Turn",
+        "min": 2500,
+        "max": 5000,
+        "plus": true
+      }
+    ],
+    "dimensions": [
+      ["Double Pane", "22 in", "22 in", "44 in", "80 in", "17 sq ft"]
+    ]
+  },
+  "/windows/awning/": {
+    "installed": [
+      {
+        "label": "Small Awning (standard)",
+        "min": 500,
+        "max": 900,
+        "plus": false
+      },
+      {
+        "label": "Mid-Size Vinyl Awning",
+        "min": 700,
+        "max": 1200,
+        "plus": false
+      },
+      {
+        "label": "Large / Premium",
+        "min": 1200,
+        "max": 1800,
+        "plus": true
+      },
+      {
+        "label": "Custom / custom scope",
+        "min": 1600,
+        "max": 2400,
+        "plus": false
+      }
+    ],
+    "dimensions": [
+      ["Double Pane", "15 in", "15 in", "54 in", "40 in", "17 sq ft"],
+      ["Triple Pane", "15 in", "15 in", "40 in", "40 in", "16 sq ft"]
+    ]
+  },
+  "/windows/single-hung/": {
+    "installed": [
+      {
+        "label": "Smaller Single Hung",
+        "min": 500,
+        "max": 1100,
+        "plus": false
+      },
+      {
+        "label": "Standard Single Hung",
+        "min": 800,
+        "max": 1400,
+        "plus": false
+      },
+      {
+        "label": "Taller Single Hung",
+        "min": 1200,
+        "max": 2000,
+        "plus": true
+      }
+    ],
+    "dimensions": [
+      ["Double Pane", "16 in", "30 in", "44 in", "72 in", "17 sq ft"]
+    ]
+  },
+  "/windows/fixed-casement/": {
+    "installed": [
+      {
+        "label": "Small Fixed Casement",
+        "min": 500,
+        "max": 900,
+        "plus": false
+      },
+      {
+        "label": "Mid-Size Fixed Casement",
+        "min": 700,
+        "max": 1200,
+        "plus": false
+      },
+      {
+        "label": "Large Fixed Casement",
+        "min": 1200,
+        "max": 1800,
+        "plus": true
+      },
+      {
+        "label": "Custom Fixed Casement",
+        "min": 1600,
+        "max": 2400,
+        "plus": false
+      }
+    ],
+    "dimensions": [
+      ["Double Pane", "12 in", "12 in", "120 in", "120 in", "50 sq ft"],
+      ["Triple Pane", "12 in", "12 in", "96 in", "96 in", "33 sq ft"]
+    ]
+  },
+  "/windows/picture/": {
+    "installed": [
+      {
+        "label": "Small Picture (standard)",
+        "min": 400,
+        "max": 800,
+        "plus": false
+      },
+      {
+        "label": "Mid-Size Vinyl Picture",
+        "min": 600,
+        "max": 1100,
+        "plus": false
+      },
+      {
+        "label": "Large / Oversized",
+        "min": 1000,
+        "max": 1700,
+        "plus": true
+      },
+      {
+        "label": "Custom / custom scope",
+        "min": 1400,
+        "max": 2200,
+        "plus": false
+      }
+    ],
+    "dimensions": [
+      ["Double Pane", "12 in", "12 in", "90 in", "90 in", "30 sq ft"],
+      ["Triple Pane", "12 in", "12 in", "60 in", "60 in", "25 sq ft"]
+    ]
+  },
+  "/windows/bow/": {
+    "installed": [
+      {
+        "label": "4-Panel Bow Window",
+        "min": 3000,
+        "max": 4800,
+        "plus": false
+      },
+      {
+        "label": "5-Panel Bow Window",
+        "min": 4200,
+        "max": 6500,
+        "plus": false
+      },
+      {
+        "label": "Large Bow (5\u20136 Panels)",
+        "min": 5500,
+        "max": 8500,
+        "plus": true
+      },
+      {
+        "label": "Custom Architectural Bow",
+        "min": 8000,
+        "max": 12000,
+        "plus": true
+      }
+    ],
+    "dimensions": []
+  },
+  "/windows/sliding/": {
+    "installed": [
+      {
+        "label": "Single Slider Window",
+        "min": 600,
+        "max": 1200,
+        "plus": false
+      },
+      {
+        "label": "Double Slider Window",
+        "min": 800,
+        "max": 1600,
+        "plus": false
+      },
+      {
+        "label": "End-Vent Sliding Window",
+        "min": 1200,
+        "max": 2500,
+        "plus": true
+      }
+    ],
+    "dimensions": []
+  }
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "name": "Toronto",
+    "group": "Toronto",
+    "path": "/service-areas/toronto/"
+  },
+  {
+    "name": "Etobicoke",
+    "group": "Toronto",
+    "path": "/service-areas/etobicoke/"
+  },
+  {
+    "name": "North York",
+    "group": "Toronto",
+    "path": "/service-areas/north-york/"
+  },
+  {
+    "name": "Scarborough",
+    "group": "Toronto",
+    "path": "/service-areas/scarborough/"
+  },
+  {
+    "name": "Thornhill",
+    "group": "Toronto",
+    "path": "/service-areas/thornhill/"
+  },
+  {
+    "name": "Aurora",
+    "group": "North GTA",
+    "path": "/service-areas/aurora/"
+  },
+  {
+    "name": "East Gwillimbury",
+    "group": "North GTA",
+    "path": "/service-areas/east-gwillimbury/"
+  },
+  {
+    "name": "Georgina",
+    "group": "North GTA",
+    "path": "/service-areas/georgina/"
+  },
+  {
+    "name": "Keswick",
+    "group": "North GTA",
+    "path": "/service-areas/keswick/"
+  },
+  {
+    "name": "King City",
+    "group": "North GTA",
+    "path": "/service-areas/king-city/"
+  },
+  {
+    "name": "Maple",
+    "group": "North GTA",
+    "path": "/service-areas/maple/"
+  },
+  {
+    "name": "Markham",
+    "group": "North GTA",
+    "path": "/service-areas/markham/"
+  },
+  {
+    "name": "Newmarket",
+    "group": "North GTA",
+    "path": "/service-areas/newmarket/"
+  },
+  {
+    "name": "Richmond Hill",
+    "group": "North GTA",
+    "path": "/service-areas/richmond-hill/"
+  },
+  {
+    "name": "Vaughan",
+    "group": "North GTA",
+    "path": "/service-areas/vaughan/"
+  },
+  {
+    "name": "Woodbridge",
+    "group": "North GTA",
+    "path": "/service-areas/woodbridge/"
+  },
+  {
+    "name": "Bradford",
+    "group": "North GTA",
+    "path": "/service-areas/bradford/"
+  },
+  {
+    "name": "Ajax",
+    "group": "East GTA",
+    "path": "/service-areas/ajax/"
+  },
+  {
+    "name": "Courtice",
+    "group": "East GTA",
+    "path": "/service-areas/courtice/"
+  },
+  {
+    "name": "Oshawa",
+    "group": "East GTA",
+    "path": "/service-areas/oshawa/"
+  },
+  {
+    "name": "Pickering",
+    "group": "East GTA",
+    "path": "/service-areas/pickering/"
+  },
+  {
+    "name": "Uxbridge",
+    "group": "East GTA",
+    "path": "/service-areas/uxbridge/"
+  },
+  {
+    "name": "Whitby",
+    "group": "East GTA",
+    "path": "/service-areas/whitby/"
+  },
+  {
+    "name": "Peterborough",
+    "group": "East GTA",
+    "path": "/service-areas/peterborough/"
+  },
+  {
+    "name": "Brampton",
+    "group": "West GTA",
+    "path": "/service-areas/brampton/"
+  },
+  {
+    "name": "Mississauga",
+    "group": "West GTA",
+    "path": "/service-areas/mississauga/"
+  },
+  {
+    "name": "Bolton",
+    "group": "West GTA",
+    "path": "/service-areas/bolton/"
+  },
+  {
+    "name": "Caledon",
+    "group": "West GTA",
+    "path": "/service-areas/caledon/"
+  },
+  {
+    "name": "Georgetown",
+    "group": "West GTA",
+    "path": "/service-areas/georgetown/"
+  },
+  {
+    "name": "Halton Hills",
+    "group": "West GTA",
+    "path": "/service-areas/halton-hills/"
+  },
+  {
+    "name": "Orangeville",
+    "group": "West GTA",
+    "path": "/service-areas/orangeville/"
+  },
+  {
+    "name": "Burlington",
+    "group": "West GTA",
+    "path": "/service-areas/burlington/"
+  },
+  {
+    "name": "Milton",
+    "group": "West GTA",
+    "path": "/service-areas/milton/"
+  },
+  {
+    "name": "Oakville",
+    "group": "West GTA",
+    "path": "/service-areas/oakville/"
+  },
+  {
+    "name": "Brantford",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/brantford/"
+  },
+  {
+    "name": "Cambridge",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/cambridge/"
+  },
+  {
+    "name": "Guelph",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/guelph/"
+  },
+  {
+    "name": "Hamilton",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/hamilton/"
+  },
+  {
+    "name": "Kitchener",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/kitchener/"
+  },
+  {
+    "name": "London",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/london/"
+  },
+  {
+    "name": "Niagara Falls",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/niagara-falls/"
+  },
+  {
+    "name": "St. Catharines",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/st-catharines/"
+  },
+  {
+    "name": "Welland",
+    "group": "Golden Horseshoe",
+    "path": "/service-areas/welland/"
+  },
+  {
+    "name": "Barrie",
+    "group": "Cottage Country",
+    "path": "/service-areas/barrie/"
+  },
+  {
+    "name": "Bracebridge",
+    "group": "Cottage Country",
+    "path": "/service-areas/bracebridge/"
+  },
+  {
+    "name": "Collingwood",
+    "group": "Cottage Country",
+    "path": "/service-areas/collingwood/"
+  },
+  {
+    "name": "Innisfil",
+    "group": "Cottage Country",
+    "path": "/service-areas/innisfil/"
+  },
+  {
+    "name": "Kawartha",
+    "group": "Cottage Country",
+    "path": "/service-areas/kawartha/"
+  },
+  {
+    "name": "Muskoka",
+    "group": "Cottage Country",
+    "path": "/service-areas/muskoka/"
+  },
+  {
+    "name": "Orillia",
+    "group": "Cottage Country",
+    "path": "/service-areas/orillia/"
+  },
+  {
+    "name": "Belleville",
+    "group": "Cottage Country",
+    "path": "/service-areas/belleville/"
+  }
+]

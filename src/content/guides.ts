@@ -1,0 +1,432 @@
+import type { ContentPage } from "./types";
+const comparisons = [
+  [
+    "double-vs-triple-pane",
+    "Double-pane vs triple-pane windows",
+    "The useful comparison is between two complete window configurations, with the same opening size and frame. Triple glazing adds a pane and a cavity, while also adding weight.",
+    "Double-pane",
+    "Triple-pane",
+    [
+      [
+        "Construction",
+        "Two panes and one sealed cavity",
+        "Three panes and two sealed cavities",
+      ],
+      [
+        "Hardware load",
+        "Lower glass weight for an equivalent size",
+        "Higher glass weight; compatible support required",
+      ],
+      [
+        "Thermal comparison",
+        "Review the exact whole-window rating",
+        "Review the exact whole-window rating",
+      ],
+      [
+        "Budget decision",
+        "A baseline to compare against",
+        "Evaluate the upgrade for exposure and comfort",
+      ],
+      [
+        "Fit",
+        "Check approved size range",
+        "Size limits can differ from double glazing",
+      ],
+    ],
+    "Start with the rooms that prompted your project. A cold-feeling seating area, a large exposed opening and a small utility-room window do not present the same decision. Ask how each package changes the performance rating, visible light and total installed price.",
+    "More panes do not automatically mean a guaranteed energy saving or noise reduction. Coating selection, spacer, frame, installation and the original window condition all affect the result. Use comparable product data rather than a pane-count shortcut.",
+    "/windows/glass/double-pane/",
+    "/windows/glass/triple-pane/",
+  ],
+  [
+    "vinyl-vs-aluminum",
+    "Vinyl vs aluminum windows",
+    "Frame material changes construction and appearance, but it does not replace product-level performance data. Compare profiles with equivalent glass and opening sizes.",
+    "Vinyl",
+    "Aluminum",
+    [
+      [
+        "Frame construction",
+        "PVC profiles, often multi-chambered",
+        "Metal profiles with system-specific thermal breaks",
+      ],
+      [
+        "Appearance",
+        "Classic and slimmer profile options",
+        "Architectural metal profile appearance",
+      ],
+      [
+        "Thermal design",
+        "Frame geometry and internal chambers matter",
+        "Thermal-break design is central",
+      ],
+      [
+        "Maintenance",
+        "Follow finish, seal and drainage guidance",
+        "Follow coating, hardware and drainage guidance",
+      ],
+      [
+        "Selection",
+        "Check colour, size and glass compatibility",
+        "Check system, span and glazing compatibility",
+      ],
+    ],
+    "Look at the glass area and frame proportions on an actual sample. Two windows with the same outside dimension can leave different amounts of visible glass. Exterior finish, interior trim and adjoining windows should be part of the visual comparison.",
+    "Avoid treating a material as a universal performance ranking. Ask for the applicable ratings, approved dimensions and installation requirements of the system offered for your project.",
+    "/windows/materials/vinyl/",
+    "/windows/materials/aluminum/",
+  ],
+  [
+    "classic-vs-slim-profile",
+    "Classic vs slim window profiles",
+    "A classic profile and a slimmer profile create different proportions around the glass. The choice starts with appearance, then moves to configuration and performance.",
+    "Classic profile",
+    "Slim profile",
+    [
+      [
+        "Visual character",
+        "More defined frame and traditional detail",
+        "Flatter profile and reduced visible framing",
+      ],
+      [
+        "Design discussion",
+        "Coordinate moulding, grilles and existing trim",
+        "Coordinate clear views and minimal detailing",
+      ],
+      [
+        "Research frame reference",
+        "3¼-inch frame depth referenced",
+        "2⅞-inch profile referenced",
+      ],
+      [
+        "Compatibility",
+        "Verify the selected opening style and glass",
+        "Verify the selected opening style and glass",
+      ],
+      [
+        "Approval",
+        "Confirm Factory Lane series and model",
+        "Confirm Factory Lane series and model",
+      ],
+    ],
+    "Compare matching-sized samples side by side. Ask which measurement describes frame depth and which describes the visible sightline: these are different dimensions. A slimmer profile does not mean every part of the frame is proportionally smaller.",
+    "The research dimensions are preliminary references, not a promise for every unit. Public series names, exact dimensions and applicable performance documents must be approved against the actual Factory Lane product specification.",
+    "/windows/series/classic/",
+    "/windows/series/slim-profile/",
+  ],
+  [
+    "steel-vs-fiberglass",
+    "Steel vs fiberglass entry doors",
+    "Compare complete entrance assemblies rather than only door skins. Steel and fiberglass can each be specified with different panels, glass, frames and hardware.",
+    "Steel",
+    "Fiberglass",
+    [
+      [
+        "Exterior skin",
+        "Steel skin over an insulated construction",
+        "Moulded composite skin",
+      ],
+      [
+        "Appearance",
+        "Painted panels and glass options",
+        "Smooth or woodgrain-style surfaces",
+      ],
+      [
+        "Care priorities",
+        "Protect paint and address damage appropriately",
+        "Follow the specified finish care",
+      ],
+      [
+        "Common comparison",
+        "Panel, glass and installed scope",
+        "Texture, finish and installed scope",
+      ],
+      [
+        "Full assembly",
+        "Frame, sill, seals, hinges and lock",
+        "Frame, sill, seals, hinges and lock",
+      ],
+    ],
+    "Try the handle and closing action, look at the sill and compare decorative glass under light. If you are replacing the entire entrance, sidelites and a transom may matter as much to the result as the slab material.",
+    "Price ranges overlap because configuration changes the scope. A simple slab and a wide entry system with decorative glass are not comparable orders, even if both use the same material.",
+    "/doors/entry/steel/",
+    "/doors/entry/fiberglass/",
+  ],
+  [
+    "casement-vs-awning",
+    "Casement vs awning windows",
+    "Both open outward, but their hinge positions create different opening shapes. Let the wall proportions, ventilation needs and exterior clearance guide the choice.",
+    "Casement",
+    "Awning",
+    [
+      ["Hinge position", "Side", "Top"],
+      ["Opening movement", "Sash swings sideways", "Lower edge moves outward"],
+      [
+        "Typical proportions",
+        "Often a more vertical opening",
+        "Often a wider, shorter opening",
+      ],
+      [
+        "Ventilation planning",
+        "Consider breeze direction and reach",
+        "Consider reach and projection below the hinge",
+      ],
+      [
+        "Shared checks",
+        "Hardware, seals and exterior clearance",
+        "Hardware, seals and exterior clearance",
+      ],
+    ],
+    "A kitchen layout is a useful example: reach the operator from the actual working position and check what lies beyond the sash. A window that looks right in elevation can still conflict with a path or landscaping outside.",
+    "Both configurations can be combined with fixed glass. Review the complete arrangement, including aligned grilles and frame proportions, rather than selecting each unit independently.",
+    "/windows/casement/",
+    "/windows/awning/",
+  ],
+  [
+    "single-hung-vs-double-hung",
+    "Single-hung vs double-hung windows",
+    "The central difference is which sashes move. Single hung opens at the lower sash; double hung allows movement at both the lower and upper sash.",
+    "Single hung",
+    "Double hung",
+    [
+      ["Operating sections", "Lower sash only", "Upper and lower sashes"],
+      [
+        "Upper ventilation",
+        "Upper sash remains fixed",
+        "Upper sash can be opened",
+      ],
+      ["Exterior swing", "No outward swing", "No outward swing"],
+      [
+        "Cleaning",
+        "Confirm the selected tilt or removal feature",
+        "Confirm tilt-in operation on both sashes",
+      ],
+      [
+        "Installation focus",
+        "Track, balance and frame alignment",
+        "Alignment and balance of both sashes",
+      ],
+    ],
+    "Decide whether upper-sash ventilation is useful in the room before choosing. Then compare meeting rails, visible glass and how easily each sash can be reached. A display makes this much clearer than a diagram alone.",
+    "Do not assume every sash tilts or removes in the same way. Ask for the operating and care instructions of the exact product, including any opening restrictors.",
+    "/windows/single-hung/",
+    "/windows/double-hung/",
+  ],
+  [
+    "bay-vs-bow",
+    "Bay vs bow windows",
+    "Both project beyond the wall, but a bay uses a more angular arrangement while a bow creates a gentler curve from several sections. The support and weatherproofing are part of either design.",
+    "Bay",
+    "Bow",
+    [
+      ["Overall shape", "Angled projection", "Curved multi-panel layout"],
+      [
+        "Common arrangement",
+        "Larger centre with side sections",
+        "Several repeated window sections",
+      ],
+      [
+        "View",
+        "Distinct centre and side views",
+        "View distributed around the curve",
+      ],
+      [
+        "Interior discussion",
+        "Projection and ledge or seating detail",
+        "Span, curve and interior depth",
+      ],
+      [
+        "Installation",
+        "Support, cap, insulation and flashing",
+        "Support, cap, panel alignment and flashing",
+      ],
+    ],
+    "Review the room from the inside, then the façade from outside. A wider span changes the balance of the wall; deeper projection affects the ledge, ceiling or cap and the support below. Opening panels can be incorporated into either arrangement.",
+    "A price for separate flat windows is not the price of a complete projecting assembly. Confirm framing, finishing and any structural changes in the same written quote.",
+    "/windows/bay/",
+    "/windows/bow/",
+  ],
+  [
+    "picture-vs-fixed-casement",
+    "Picture vs fixed casement windows",
+    "Both are non-opening windows. The choice is usually about profile proportions and how the unit coordinates with surrounding windows.",
+    "Picture",
+    "Fixed casement",
+    [
+      ["Operation", "Fixed, no ventilation", "Fixed, no ventilation"],
+      [
+        "Design aim",
+        "An uninterrupted view with a fixed frame",
+        "Appearance coordinated with casement units",
+      ],
+      [
+        "Layout",
+        "Feature glazing or paired arrangements",
+        "Matched fixed and operating groups",
+      ],
+      [
+        "Check in person",
+        "Visible glass and frame dimensions",
+        "Sightline alignment beside an operating sash",
+      ],
+      [
+        "Shared limitation",
+        "Cannot act as an opening sash",
+        "Cannot act as an opening sash",
+      ],
+    ],
+    "Use equal outside dimensions for a meaningful side-by-side comparison. A photograph can make the glass areas look similar even when the visible frame widths are different.",
+    "If the room needs ventilation, include an operating window elsewhere in the design. A fixed casement does not open simply because it resembles a casement.",
+    "/windows/picture/",
+    "/windows/fixed-casement/",
+  ],
+  [
+    "sliding-vs-casement",
+    "Sliding vs casement windows",
+    "Sliding windows travel inside the frame; casements swing outward. This changes clearance, ventilation shape and the hardware you use every day.",
+    "Sliding",
+    "Casement",
+    [
+      ["Movement", "Horizontal track", "Side-hinged outward swing"],
+      ["Outside clearance", "No swing zone", "Clear swing zone needed"],
+      [
+        "Opening passage",
+        "One section overlaps another",
+        "Sash can move away from the opening",
+      ],
+      [
+        "Operation",
+        "Move the sash along the track",
+        "Use a crank and locking mechanism",
+      ],
+      [
+        "Maintenance focus",
+        "Tracks, drainage and sliding seals",
+        "Hinges, operator and compression seals",
+      ],
+    ],
+    "Walkways, decks and narrow side spaces can make sash projection a decisive factor. Indoors, check reach across counters and furniture as well as the height of the lock.",
+    "Compare equivalent glass and frames when considering efficiency or price. Operation style alone does not supply a complete performance rating.",
+    "/windows/sliding/",
+    "/windows/casement/",
+  ],
+  [
+    "sliding-vs-garden-doors",
+    "Sliding patio doors vs garden doors",
+    "A slider moves within its frame. A garden-door arrangement uses hinged leaves and therefore needs a swing zone. Both can connect a living space to the backyard in different ways.",
+    "Sliding patio door",
+    "Garden doors",
+    [
+      ["Panel movement", "Along a track", "Hinged leaf or leaves"],
+      ["Clearance", "No door-swing area", "Space required for the swing"],
+      [
+        "Daily access",
+        "Sliding opening and screen",
+        "Operating leaf and screen arrangement",
+      ],
+      [
+        "Design discussion",
+        "Track width and clear passage",
+        "Leaf configuration and swing direction",
+      ],
+      [
+        "Installation focus",
+        "Level track, rollers and drainage",
+        "Hinges, sill support and weather seals",
+      ],
+    ],
+    "Map furniture, steps, planters and the walking route through the room. The best choice should work for everyday access with just one panel or leaf in use, not only when everything is fully opened.",
+    "Ask which parts operate, how screens work and how the threshold meets the finished floors. These details can change between systems that look similar in a catalogue.",
+    "/doors/patio/sliding/",
+    "/doors/patio/garden/",
+  ],
+  [
+    "retrofit-vs-full-frame",
+    "Retrofit vs full-frame window replacement",
+    "The installation method describes how the old window is removed and how the new unit joins the opening. It should respond to existing conditions, not just the lowest initial price.",
+    "Retrofit / insert",
+    "Full-frame replacement",
+    [
+      [
+        "Existing frame",
+        "Suitable existing frame is retained",
+        "Old frame is removed",
+      ],
+      [
+        "Opening assessment",
+        "Retained components must be sound",
+        "Allows closer inspection of the opening",
+      ],
+      [
+        "Finishing",
+        "Some existing trim can remain",
+        "Interior and exterior finishing is addressed",
+      ],
+      [
+        "Glass area",
+        "Retained frame can affect clear glass",
+        "Depends on the new frame and opening",
+      ],
+      [
+        "Best comparison",
+        "Exact retained and replaced components",
+        "Complete removal and finishing scope",
+      ],
+    ],
+    "Rot, water entry, distorted framing or a change in the opening may make an insert unsuitable. Conversely, a sound retained frame can support a more limited replacement scope. Assessment at the home is needed before choosing.",
+    "Full-frame replacement does not automatically mean enlarging the opening or removing surrounding masonry. Structural changes and cut-out work are separate items that need their own design and approval.",
+    "/installation/window-replacement/",
+    "/installation/cut-out/",
+  ],
+] as const;
+export const comparisonPages: ContentPage[] = comparisons.map(
+  ([slug, title, intro, a, b, rows, p1, p2, left, right]) => ({
+    path: `/compare/${slug}/`,
+    title,
+    description: `A practical comparison of ${title.toLowerCase().replace(" vs ", " and ")}: differences, limitations, installation and questions to ask before choosing.`,
+    eyebrow: "COMPARE / CHOOSE WITH CONFIDENCE",
+    intro,
+    parent: "/compare/",
+    kind: "guide",
+    image:
+      slug.includes("door") || slug.includes("steel")
+        ? "entry-doors"
+        : "profile",
+    imageAlt: "Product samples in the showroom",
+    sections: [
+      {
+        title: `${a} and ${b}: the differences`,
+        table: { headers: ["Question", a, b], rows: rows.map((r) => [...r]) },
+      },
+      { title: "Choose for the actual opening", paragraphs: [p1, p2] },
+      {
+        title: "Bring your comparison into the showroom",
+        paragraphs: [
+          "Bring a photograph of the room and note what is not working now: light, airflow, access, appearance or comfort. A useful consultation narrows the options using those priorities instead of adding every possible upgrade.",
+          "Once the configuration is chosen, review dimensions, glass, finish, hardware, installation and finishing on the written quote. Equivalent scope is the basis of a fair price comparison.",
+        ],
+        links: [
+          { label: a, href: left },
+          { label: b, href: right },
+        ],
+      },
+    ],
+    faq: [
+      [
+        "Is one option always better?",
+        "No. The opening, room use, exposure, maintenance preferences and complete installed scope determine which choice fits. The comparison table explains the trade-offs to discuss.",
+      ],
+      [
+        "Can I mix different types in one home?",
+        "Yes, subject to product compatibility and the design of each opening. Coordinate the visible profiles, finishes and glass where a consistent appearance matters.",
+      ],
+    ],
+    related: [
+      left,
+      right,
+      "/pricing/windows/",
+      "/pricing/doors/",
+      "/showroom/",
+    ],
+  }),
+);

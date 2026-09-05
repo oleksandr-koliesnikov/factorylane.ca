@@ -3,6 +3,11 @@
 .env.*
 !.env.example
 node_modules/
+.next/
+out/
+output/
+*.tsbuildinfo
+.playwright-cli/
 dist/
 .wrangler/
 .codex/

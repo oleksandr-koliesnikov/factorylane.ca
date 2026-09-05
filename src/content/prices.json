@@ -1,0 +1,443 @@
+[
+  {
+    "id": "W001",
+    "product": "Bay Window",
+    "size": "Small",
+    "min": 700,
+    "max": 1100,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W002",
+    "product": "Bay Window",
+    "size": "Medium",
+    "min": 1190,
+    "max": 1860,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W003",
+    "product": "Bay Window",
+    "size": "Large",
+    "min": 1680,
+    "max": 2630,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W004",
+    "product": "Bow Window",
+    "size": "Small",
+    "min": 700,
+    "max": 1100,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W005",
+    "product": "Bow Window",
+    "size": "Medium",
+    "min": 1190,
+    "max": 1860,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W006",
+    "product": "Bow Window",
+    "size": "Large",
+    "min": 1680,
+    "max": 2630,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W007",
+    "product": "Single Casement Window",
+    "size": "Small",
+    "min": 240,
+    "max": 380,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W008",
+    "product": "Single Casement Window",
+    "size": "Medium",
+    "min": 410,
+    "max": 640,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W009",
+    "product": "Single Casement Window",
+    "size": "Large",
+    "min": 480,
+    "max": 750,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W010",
+    "product": "Double Casement Window",
+    "size": "Small",
+    "min": 560,
+    "max": 880,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W011",
+    "product": "Double Casement Window",
+    "size": "Medium",
+    "min": 950,
+    "max": 1490,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W012",
+    "product": "Double Casement Window",
+    "size": "Large",
+    "min": 1040,
+    "max": 1630,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W013",
+    "product": "Awning Window",
+    "size": "Small",
+    "min": 280,
+    "max": 440,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W014",
+    "product": "Awning Window",
+    "size": "Medium",
+    "min": 480,
+    "max": 750,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W015",
+    "product": "Awning Window",
+    "size": "Large",
+    "min": 720,
+    "max": 1130,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W016",
+    "product": "Single-hung Window",
+    "size": "Small",
+    "min": 220,
+    "max": 350,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W017",
+    "product": "Single-hung Window",
+    "size": "Medium",
+    "min": 380,
+    "max": 600,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W018",
+    "product": "Single-hung Window",
+    "size": "Large",
+    "min": 620,
+    "max": 980,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W019",
+    "product": "Double-hung Window",
+    "size": "Small",
+    "min": 220,
+    "max": 350,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W020",
+    "product": "Double-hung Window",
+    "size": "Medium",
+    "min": 380,
+    "max": 600,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W021",
+    "product": "Double-hung Window",
+    "size": "Large",
+    "min": 560,
+    "max": 880,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W022",
+    "product": "Single Sliding Window",
+    "size": "Small",
+    "min": 200,
+    "max": 310,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W023",
+    "product": "Single Sliding Window",
+    "size": "Medium",
+    "min": 340,
+    "max": 540,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W024",
+    "product": "Single Sliding Window",
+    "size": "Large",
+    "min": 520,
+    "max": 810,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W025",
+    "product": "Double Sliding Window",
+    "size": "Small",
+    "min": 220,
+    "max": 350,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W026",
+    "product": "Double Sliding Window",
+    "size": "Medium",
+    "min": 380,
+    "max": 600,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W027",
+    "product": "Double Sliding Window",
+    "size": "Large",
+    "min": 560,
+    "max": 880,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W028",
+    "product": "Tilt and Turn Window",
+    "size": "Small",
+    "min": 240,
+    "max": 380,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W029",
+    "product": "Tilt and Turn Window",
+    "size": "Medium",
+    "min": 410,
+    "max": 640,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W030",
+    "product": "Tilt and Turn Window",
+    "size": "Large",
+    "min": 580,
+    "max": 900,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W031",
+    "product": "Hopper Window",
+    "size": "Small",
+    "min": 280,
+    "max": 440,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W032",
+    "product": "Hopper Window",
+    "size": "Medium",
+    "min": 480,
+    "max": 750,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W033",
+    "product": "Hopper Window",
+    "size": "Large",
+    "min": 670,
+    "max": 1050,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W034",
+    "product": "Fixed Picture Window",
+    "size": "Small",
+    "min": 160,
+    "max": 250,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W035",
+    "product": "Fixed Picture Window",
+    "size": "Medium",
+    "min": 270,
+    "max": 430,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W036",
+    "product": "Fixed Picture Window",
+    "size": "Large",
+    "min": 2560,
+    "max": 4000,
+    "basis": "Product reference",
+    "needsReview": true
+  },
+  {
+    "id": "W037",
+    "product": "Fixed Casement Window",
+    "size": "Small",
+    "min": 240,
+    "max": 380,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W038",
+    "product": "Fixed Casement Window",
+    "size": "Medium",
+    "min": 410,
+    "max": 640,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "W039",
+    "product": "Fixed Casement Window",
+    "size": "Large",
+    "min": 580,
+    "max": 900,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D001",
+    "product": "Steel entry",
+    "size": "varies",
+    "min": 1500,
+    "max": 5000,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D002",
+    "product": "Steel entry",
+    "size": "varies",
+    "min": 2000,
+    "max": 5500,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D003",
+    "product": "Fiberglass entry",
+    "size": "varies",
+    "min": 2500,
+    "max": 10000,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D004",
+    "product": "Fiberglass entry",
+    "size": "varies",
+    "min": 3000,
+    "max": 11000,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D005",
+    "product": "Vinyl patio",
+    "size": "varies",
+    "min": 1500,
+    "max": 5000,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D006",
+    "product": "Vinyl patio",
+    "size": "varies",
+    "min": 2000,
+    "max": 5800,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D007",
+    "product": "French",
+    "size": "varies",
+    "min": 1800,
+    "max": 4500,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D008",
+    "product": "French",
+    "size": "varies",
+    "min": 2500,
+    "max": 5500,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D009",
+    "product": "Storm",
+    "size": "varies",
+    "min": 900,
+    "max": 2000,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D010",
+    "product": "Storm",
+    "size": "varies",
+    "min": 1100,
+    "max": 2400,
+    "basis": "Installed reference",
+    "needsReview": false
+  }
+]

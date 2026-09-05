@@ -1,0 +1,42 @@
+{
+  "windows": {
+    "width": 1600,
+    "height": 1200,
+    "widths": [480, 800, 1200]
+  },
+  "entry-doors": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [480, 800, 1200]
+  },
+  "patio-doors": {
+    "width": 1600,
+    "height": 1200,
+    "widths": [480, 800, 1200]
+  },
+  "showroom": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [480, 800, 1200]
+  },
+  "manufacturing": {
+    "width": 1600,
+    "height": 1200,
+    "widths": [480, 800, 1200]
+  },
+  "profile": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [480, 800, 1200]
+  },
+  "window-detail": {
+    "width": 1600,
+    "height": 1200,
+    "widths": [480, 800, 1200]
+  },
+  "comfort-backyard": {
+    "width": 1600,
+    "height": 900,
+    "widths": [480, 800, 1200]
+  }
+}
