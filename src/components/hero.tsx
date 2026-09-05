@@ -70,6 +70,7 @@ export function Hero() {
     if (v.readyState < 1) {
       pendingChapter.current = index;
       if (!v.getAttribute("src")) {
+        v.preload = "auto";
         v.src = filmSource();
         v.load();
       }
