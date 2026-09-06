@@ -2995,7 +2995,11 @@ tbody th {
   align-self: start;
   position: sticky;
   top: 120px;
-  padding-top: 5px;
+  max-height: calc(100dvh - 148px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  padding: 5px 12px 8px 0;
 }
 .article-nav > p {
   font-size: 12px;
@@ -3591,11 +3595,17 @@ tbody th {
     gap: 35px;
   }
   .article-nav {
+    max-height: none;
+    overflow: visible;
     position: static;
     border-bottom: 1px solid var(--line);
     padding-bottom: 25px;
   }
   .article-nav nav {
+    max-height: 230px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 8px;
     display: flex;
     flex-wrap: wrap;
     gap: 12px 20px;
@@ -4008,4 +4018,34 @@ tbody th {
 .closing-cta p:not(.eyebrow) {
   color: #fff;
   opacity: 1;
+}
+
+.section-video {
+  margin: 30px 0;
+}
+.section-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--charcoal, #2b2e31);
+  border-radius: 16px;
+}
+.section-video figcaption {
+  padding: 18px 0 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.section-video figcaption p {
+  margin: 8px 0 16px;
+}
+.section-video details {
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.section-video summary {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 }

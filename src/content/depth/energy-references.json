@@ -1,0 +1,60 @@
+{
+  "casement": {
+    "rows": [
+      ["Double pane", "34 - 36", "1.28 - 1.49", "0.42 - 0.47"],
+      ["Triple pane", "31 - 33", "0.95 - 0.98", "0.23 - 0.24"]
+    ],
+    "verifiedModel": false,
+    "display": true
+  },
+  "double-hung": {
+    "rows": [["Double pane", "35 - 38", "1.50 - 1.53", "0.53 - 0.55"]],
+    "verifiedModel": false,
+    "display": false
+  },
+  "tilt-and-turn": {
+    "rows": [
+      ["Double pane", "34", "1.61", "0.52"],
+      ["Triple pane", "40", "1.11", "0.43"]
+    ],
+    "verifiedModel": false,
+    "display": true
+  },
+  "awning": {
+    "rows": [
+      ["Double pane", "34 - 35", "1.3 - 1.5", "0.42 - 0.48"],
+      ["Triple pane", "31 - 32", "0.95 - 1", "0.23 - 0.24"]
+    ],
+    "verifiedModel": false,
+    "display": true
+  },
+  "single-hung": {
+    "rows": [["Double pane", "35 - 38", "1.48 - 1.51", "0.53 - 0.55"]],
+    "verifiedModel": false,
+    "display": true
+  },
+  "fixed-casement": {
+    "rows": [
+      ["Double pane", "32 - 41", "1.19 - 1.47", "0.32 - 0.54"],
+      ["Triple pane", "34 - 46", "0.88 - 0.98", "0.27 - 0.44"]
+    ],
+    "verifiedModel": false,
+    "display": true
+  },
+  "picture": {
+    "rows": [
+      ["Double pane", "43", "1.25", "0.59"],
+      ["Triple pane", "50", "0.75", "0.48"]
+    ],
+    "verifiedModel": false,
+    "display": true
+  },
+  "sliding": {
+    "rows": [
+      ["Double pane", "35 - 38", "1.48 - 1.51", "0.53 - 0.55"],
+      ["Triple pane", "31 - 33", "0.95 - 0.98", "0.23 - 0.24"]
+    ],
+    "verifiedModel": false,
+    "display": true
+  }
+}

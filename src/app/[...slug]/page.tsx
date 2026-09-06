@@ -87,6 +87,17 @@ export default async function Content({ params }: Props) {
       })),
     },
   ];
+  if (p.faq?.length)
+    graph.push({
+      "@type": "FAQPage",
+      "@id": site.url + path + "#faq",
+      isPartOf: { "@id": site.url + path + "#webpage" },
+      mainEntity: p.faq.map(([question, answer]) => ({
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: { "@type": "Answer", text: answer },
+      })),
+    });
   if (p.city)
     graph.push({
       "@type": "Service",
@@ -216,11 +227,34 @@ export default async function Content({ params }: Props) {
                 className="article-section"
                 key={i}
               >
-                <span className="section-count">0{i + 1}</span>
+                <span className="section-count">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
                 <h2>{section.title}</h2>
                 {section.paragraphs?.map((text, j) => (
                   <p key={j}>{text}</p>
                 ))}
+                {section.video && (
+                  <figure className="section-video">
+                    <video
+                      controls
+                      preload="none"
+                      playsInline
+                      poster={section.video.poster}
+                      aria-label={section.video.title}
+                    >
+                      <source src={section.video.file} type="video/mp4" />
+                    </video>
+                    <figcaption>
+                      <strong>{section.video.title}</strong>
+                      <p>{section.video.description}</p>
+                    </figcaption>
+                    <details>
+                      <summary>Read the silent video description</summary>
+                      <p>{section.video.transcript}</p>
+                    </details>
+                  </figure>
+                )}
                 {section.bullets && (
                   <ul className="content-checklist">
                     {section.bullets.map((item) => (

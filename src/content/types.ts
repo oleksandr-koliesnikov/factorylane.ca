@@ -1,6 +1,13 @@
 export type ContentSection = {
   title: string;
   paragraphs?: string[];
+  video?: {
+    file: string;
+    poster: string;
+    title: string;
+    description: string;
+    transcript: string;
+  };
   bullets?: string[];
   table?: { headers: string[]; rows: string[][] };
   links?: { label: string; href: string }[];
