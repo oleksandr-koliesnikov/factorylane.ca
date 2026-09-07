@@ -1,4 +1,5 @@
 "use client";
+import { MediaImage } from "./media-image";
 import Link from "@/components/site-link";
 import { useState } from "react";
 export function CatalogFilter() {
@@ -59,11 +60,13 @@ export function CatalogFilter() {
       <div className="design-cards">
         {shown.map((item) => (
           <Link href={item.path} key={item.path}>
-            <div className={`door-drawing ${item.style}`} aria-hidden="true">
-              <div />
-              <div />
-              <i />
-            </div>
+            <MediaImage
+              className="catalog-illustration"
+              name={`illustrations/door-${item.material}-${item.style}`}
+              alt={`Illustrative ${item.style} ${item.material} entry-door design`}
+              sizes="(max-width: 600px) 45vw, 22vw"
+              loading="lazy"
+            />
             <h3>
               {item.style} {item.material}
             </h3>
@@ -78,7 +81,7 @@ export function CatalogFilter() {
         )}
       </div>
       <p className="table-description">
-        Design diagrams illustrate style directions, not specific confirmed
+        AI-generated illustrations show design directions, not specific supplied
         models.
       </p>
     </section>

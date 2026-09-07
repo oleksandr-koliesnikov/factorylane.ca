@@ -20,6 +20,7 @@ export type ContentPage = {
   intro: string;
   image?: string;
   imageAlt?: string;
+  imageCaption?: string;
   gallery?: { src: string; alt: string; caption: string }[];
   parent: string;
   kind:

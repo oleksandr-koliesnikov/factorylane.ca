@@ -152,19 +152,26 @@ export default async function Content({ params }: Props) {
             <Actions context={p.title} />
           </div>
           {p.image && (
-            <figure>
+            <figure
+              className={
+                p.image.startsWith("illustrations/")
+                  ? "product-illustration"
+                  : undefined
+              }
+            >
               <MediaImage
                 name={p.image}
-                sizes="(max-width: 767px) 100vw, 33vw"
+                sizes="(max-width: 767px) 100vw, (max-width: 1440px) 44vw, 565px"
                 width="1200"
                 height="1000"
                 alt={p.imageAlt ?? "Showroom and product details"}
                 fetchPriority="high"
               />
               <figcaption>
-                {p.image === "comfort-backyard"
-                  ? "Illustrative home concept"
-                  : "From our showroom & production media"}
+                {p.imageCaption ??
+                  (p.image === "comfort-backyard"
+                    ? "Illustrative home concept"
+                    : "From our showroom & production media")}
               </figcaption>
             </figure>
           )}
@@ -200,7 +207,9 @@ export default async function Content({ params }: Props) {
             ))}
           </div>
         )}
-        {isWindow && <WindowDiagram type={slug[1]} title={p.title} />}
+        {isWindow && (
+          <WindowDiagram key={slug[1]} type={slug[1]} title={p.title} />
+        )}
         <div className="article-layout">
           <aside className="article-nav">
             <p>ON THIS PAGE</p>

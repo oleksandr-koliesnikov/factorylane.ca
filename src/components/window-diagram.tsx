@@ -8,7 +8,9 @@ export function WindowDiagram({
   title: string;
 }) {
   const fixed = ["picture", "fixed-casement", "bay", "bow"].includes(type);
-  const [open, setOpen] = useState(false);
+  const [position, setPosition] = useState(0);
+  const open = position > 0;
+  const turn = position === 2;
   const horizontal = type === "sliding";
   const hung = ["single-hung", "double-hung"].includes(type);
   const tilt = ["awning", "hopper", "tilt-and-turn"].includes(type);
@@ -30,9 +32,21 @@ export function WindowDiagram({
           <button
             className="diagram-toggle"
             aria-pressed={open}
-            onClick={() => setOpen(!open)}
+            onClick={() =>
+              setPosition(
+                type === "tilt-and-turn" ? (position + 1) % 3 : 1 - position,
+              )
+            }
           >
-            {open ? "Show closed position" : "Show opening movement"}{" "}
+            {type === "tilt-and-turn"
+              ? [
+                  "Show inward tilt",
+                  "Show inward turn",
+                  "Show closed position",
+                ][position]
+              : open
+                ? "Show closed position"
+                : "Show opening movement"}{" "}
             <span aria-hidden="true">↗</span>
           </button>
         )}
@@ -41,7 +55,7 @@ export function WindowDiagram({
         <svg
           viewBox="0 0 420 290"
           role="img"
-          aria-label={`${title}: ${open ? "opening" : "closed"} schematic`}
+          aria-label={`${title}: ${turn ? "inward turn" : open ? "opening" : "closed"} schematic`}
         >
           <defs>
             <linearGradient id={"glass-" + type} x1="0" y1="0" x2="1" y2="1">
@@ -85,6 +99,15 @@ export function WindowDiagram({
               />
               {horizontal ? (
                 <>
+                  {open && (
+                    <rect
+                      x="106"
+                      y="39"
+                      width="99"
+                      height="199"
+                      fill="#fbfaf6"
+                    />
+                  )}
                   <path d="M210 39v199" stroke="#35413d" strokeWidth="9" />
                   {open && (
                     <rect
@@ -110,33 +133,54 @@ export function WindowDiagram({
                 </>
               ) : hung ? (
                 <>
-                  <path d="M106 137h208" stroke="#35413d" strokeWidth="8" />
+                  <rect
+                    x="106"
+                    y="39"
+                    width="208"
+                    height="199"
+                    fill="#fbfaf6"
+                  />
+                  <rect
+                    x="111"
+                    y={open && type === "double-hung" ? 72 : 42}
+                    width="196"
+                    height="96"
+                    fill={`url(#glass-${type})`}
+                    stroke="#35413d"
+                    strokeWidth="5"
+                  />
+                  <rect
+                    x="115"
+                    y={open ? 103 : 137}
+                    width="188"
+                    height="96"
+                    fill={`url(#glass-${type})`}
+                    stroke={open ? "#b94f26" : "#35413d"}
+                    strokeWidth="5"
+                  />
                   {open && (
-                    <>
-                      <rect
-                        x="111"
-                        y="80"
-                        width="196"
-                        height="98"
-                        fill="#b94f2620"
-                        stroke="#b94f26"
-                        strokeWidth="4"
-                      />
-                      <path
-                        d="M210 207v-28m-7 8 7-8 7 8"
-                        fill="none"
-                        stroke="#b94f26"
-                        strokeWidth="3"
-                      />
-                    </>
+                    <path
+                      d="M210 224v-23m-7 8 7-8 7 8"
+                      fill="none"
+                      stroke="#b94f26"
+                      strokeWidth="3"
+                    />
+                  )}
+                  {open && type === "double-hung" && (
+                    <path
+                      d="M210 45v22m-7-8 7 8 7-8"
+                      fill="none"
+                      stroke="#b94f26"
+                      strokeWidth="3"
+                    />
                   )}
                 </>
-              ) : tilt && open ? (
+              ) : tilt && open && !turn ? (
                 <path
                   d={
                     type === "awning"
                       ? "M111 43H308L328 212H92Z"
-                      : "M126 66H292L308 234H111Z"
+                      : "M96 66H325L308 234H111Z"
                   }
                   fill="#b94f2610"
                   stroke="#b94f26"
@@ -149,7 +193,7 @@ export function WindowDiagram({
                   stroke="#b94f26"
                   strokeWidth="5"
                 />
-              ) : (
+              ) : type !== "picture" ? (
                 <rect
                   x="112"
                   y="44"
@@ -157,12 +201,18 @@ export function WindowDiagram({
                   height="188"
                   fill="none"
                   stroke="#748078"
-                  strokeWidth="2"
+                  strokeWidth={type === "fixed-casement" ? "9" : "2"}
                 />
-              )}
+              ) : null}
               {!fixed && !hung && !horizontal && (
                 <path
-                  d="M290 135v22"
+                  d={
+                    type === "hopper"
+                      ? "M198 57h24"
+                      : type === "awning"
+                        ? "M198 227h24"
+                        : "M290 135v22"
+                  }
                   stroke="#b94f26"
                   strokeWidth="5"
                   strokeLinecap="round"

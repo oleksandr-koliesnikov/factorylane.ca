@@ -1,3 +1,4 @@
+import { applyProductIllustrations } from "./product-illustrations";
 import { specifyCatalogue } from "./depth/catalogue-specific";
 import { deepenCities } from "./depth/cities";
 import { deepenHubs } from "./depth/hubs";
@@ -91,6 +92,7 @@ for (const record of ownedPages) {
     section.links!.push({ label: record.title, href: record.path });
   }
 }
+applyProductIllustrations(pages);
 export const pageByPath = new Map(pages.map((page) => [page.path, page]));
 if (pageByPath.size !== pages.length) throw new Error("Duplicate content URL");
 export const staticLabels: Record<string, string> = {
