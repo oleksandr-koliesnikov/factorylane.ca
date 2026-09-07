@@ -1,1 +1,2 @@
-https://www.factorylane.ca/* https://factorylane.ca/:splat 301
+# Host canonicalization is configured in the Cloudflare zone Redirect Rules.
+# Cloudflare Pages _redirects only supports path-based source patterns.
