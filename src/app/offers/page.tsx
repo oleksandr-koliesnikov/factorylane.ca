@@ -32,12 +32,13 @@ export default function Offers() {
             <summary>Offer details</summary>
             <p>
               The minimum purchase is three windows. Gift quantities, eligible
-              blinds, size and colour options, installation, offer dates and
-              combination with other offers will be confirmed before launch.
+              blinds, size and colour options, installation and combination with
+              other offers are confirmed with our team before you place an
+              order.
             </p>
             <p>
-              This is a preview of the offer. No booking or order is placed
-              through this preview.
+              Ask us to include the offer in your free estimate. Sending an
+              enquiry does not place an order or confirm an appointment.
             </p>
           </details>
         </div>

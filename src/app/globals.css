@@ -4079,3 +4079,94 @@ tbody th {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+/* The home-page offer is rendered above the film, visible on initial load. */
+.homepage-offer {
+  color: #fff;
+  background: #983d20;
+}
+.homepage-offer-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 100px;
+  padding-block: 18px;
+  color: inherit;
+  text-decoration: none;
+}
+.homepage-offer-gift {
+  display: grid;
+  place-items: center;
+  flex: 0 0 52px;
+  height: 52px;
+  border: 1px solid #ffffff70;
+  border-radius: 14px;
+}
+.homepage-offer-copy {
+  display: grid;
+  gap: 5px;
+}
+.homepage-offer-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+}
+.homepage-offer-title {
+  font-size: clamp(18px, 1.65vw, 24px);
+  line-height: 1.4;
+}
+.homepage-offer-title strong {
+  font-weight: 700;
+}
+.homepage-offer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-left: auto;
+  padding: 12px 20px;
+  border: 1px solid #ffffff99;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.homepage-offer-inner:hover .homepage-offer-link,
+.homepage-offer-inner:focus-visible .homepage-offer-link {
+  background: #fff;
+  color: #983d20;
+}
+.homepage-offer-inner:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -5px;
+}
+@media (max-width: 700px) {
+  .homepage-offer-inner {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 8px 14px;
+    padding-block: 16px;
+  }
+  .homepage-offer-gift {
+    width: 36px;
+    height: 44px;
+    border: 0;
+  }
+  .homepage-offer-link {
+    grid-column: 2;
+    justify-self: start;
+    margin-left: 0;
+    min-height: 36px;
+    padding: 4px 0;
+    border: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .homepage-offer-title {
+    font-size: 18px;
+  }
+}

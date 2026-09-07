@@ -45,6 +45,26 @@ export default function Home() {
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
       />
+      <section
+        className="homepage-offer"
+        aria-label="Free blinds with 3 or more windows"
+      >
+        <Link href="/offers/" className="homepage-offer-inner container">
+          <span className="homepage-offer-gift" aria-hidden="true">
+            <Icon name="gift" size={30} />
+          </span>
+          <span className="homepage-offer-copy">
+            <span className="homepage-offer-label">A LITTLE EXTRA, ON US</span>
+            <span className="homepage-offer-title">
+              Buy <strong>3+ windows.</strong> Get single roll blinds{" "}
+              <strong>FREE.</strong>
+            </span>
+          </span>
+          <span className="homepage-offer-link">
+            View offer <Icon size={20} />
+          </span>
+        </Link>
+      </section>
       <Hero />
       <div className="promise-strip container">
         {[
@@ -59,22 +79,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <section className="offer-strip">
-        <div className="container offer-inner">
-          <div className="offer-symbol">
-            <Icon name="gift" size={30} />
-          </div>
-          <div>
-            <span className="eyebrow">A LITTLE EXTRA, ON US</span>
-            <p>
-              Buy 3+ windows. <strong>Get single roll blinds free.</strong>
-            </p>
-          </div>
-          <Link href="/offers/" className="text-link">
-            Explore the offer <Icon size={20} />
-          </Link>
-        </div>
-      </section>
       <section id="products" className="section container">
         <div className="section-heading">
           <div>
