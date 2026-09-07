@@ -4072,3 +4072,10 @@ tbody th {
   border-radius: 12px;
   margin-bottom: 18px;
 }
+.price-scope-note {
+  display: block;
+  max-width: 32rem;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

@@ -27,7 +27,7 @@ const doors = [
     "Consider the clear walk-through opening, screen operation and how the handle feels. A two-panel assembly opens differently from a larger multi-panel layout, even when both are described as sliding doors.",
     "Track drainage, roller adjustment and frame alignment affect everyday use. Keep the sill clear and confirm how the door is locked, adjusted and serviced. Floor levels and access requirements should be reviewed before choosing a threshold.",
     "Track-based movement|No swinging door leaf|Roller and screen options|Threshold and drainage planning",
-    "Vinyl patio",
+    "Sliding patio",
     "garden",
   ],
   [
@@ -47,7 +47,7 @@ const doors = [
     "Try the sequence on a display and ask which panel moves in each mode. Understand the difference between an inward-turning leaf and a tilt-and-slide mechanism before comparing quotes; the names alone are not enough.",
     "Consider curtains, blinds, nearby furniture and the threshold. Hardware must be matched to panel dimensions and glass weight. Ask for the system drawing and operating instructions before finalizing the order.",
     "Two operating modes|System-specific panel movement|Hardware and glass compatibility|Interior clearance review",
-    "",
+    "Tilt-and-turn patio",
     "bifold",
   ],
   [
@@ -57,7 +57,7 @@ const doors = [
     "Review the everyday access panel, fold direction, panel stack and space taken up inside or outside. A design that looks open in a photograph still needs a practical route through the door for daily use.",
     "Tracks, hinges and support must work as one system. Large glass panels bring weight and installation demands, while the threshold detail must address weather exposure and drainage. A low threshold is not automatically appropriate everywhere.",
     "Hinged folding panels|One-side or split stacking layouts|Everyday access panel options|Support and threshold coordination",
-    "",
+    "Bifold patio",
     "stacking",
   ],
   [
@@ -67,7 +67,7 @@ const doors = [
     "A hinged arrangement can suit a more traditional room or entry. Choose the swing direction around seating, steps and planters, and compare the clear passage with a sliding door in the same opening.",
     "The door needs a usable swing zone and appropriate support at the sill. Confirm screens, lock operation and how the secondary leaf is secured. Door furniture and blinds should be reviewed together.",
     "Hinged door arrangement|Fixed and operating combinations|Interior or exterior swing clearance|Coordinated screen and lock choices",
-    "French",
+    "Garden",
     "sliding",
   ],
   [

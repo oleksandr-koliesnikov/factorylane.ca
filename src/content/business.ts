@@ -371,7 +371,7 @@ const pages: ContentPage[] = [
           ],
         },
         paragraphs: [
-          "The confirmed street address, phone number and email will be added before public launch. Preview forms do not currently deliver messages or reserve appointments.",
+          "Email olexkol44@gmail.com to discuss your project. Our forms prepare an email for you to send; appointments are confirmed by reply. Ask for the confirmed showroom address and arrival details before travelling.",
         ],
       },
     ],
@@ -462,7 +462,7 @@ const pages: ContentPage[] = [
       {
         title: "Requesting assistance",
         paragraphs: [
-          "Have the order or installation reference, photographs and a short description ready. The service contact and delivery process will be connected before launch; preview forms do not currently send service requests.",
+          "Email olexkol44@gmail.com with your order or installation reference, photographs and a short description of the issue. We will review the details and discuss the next step.",
         ],
         links: [
           { label: "Contact options", href: "/contact/" },

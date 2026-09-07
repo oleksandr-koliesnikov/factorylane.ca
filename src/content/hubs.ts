@@ -318,7 +318,7 @@ priceWindows.sections = [
   {
     title: "How to read these ranges",
     paragraphs: [
-      "All figures are in Canadian dollars. The table is a product planning reference; installation, size-group boundaries, taxes and exact inclusions require confirmation. Do not compare it directly with a complete installed quote.",
+      "All figures are very approximate product prices in Canadian dollars. Installation is excluded and quoted separately. Size-group boundaries, taxes and exact inclusions require confirmation.",
       "The large picture-window reference is under review because its range is inconsistent with the neighbouring size groups. It is deliberately excluded from calculator totals until verified.",
     ],
   },
@@ -355,7 +355,7 @@ priceWindows.related = [
 const priceDoors = hub(
   "/pricing/doors/",
   "Exterior & patio door cost",
-  "Compare product-only and installed planning ranges for selected entry and patio door categories. Configuration and installation details determine the actual quote.",
+  "Compare very approximate product-only prices for entry and patio doors. Installation is excluded and quoted separately for your opening.",
   "/pricing/",
   "entry-doors",
 );
@@ -363,7 +363,7 @@ priceDoors.sections = [
   {
     title: "Compare the same assembly",
     paragraphs: [
-      "All figures are Canadian-dollar planning references. Installed and product-only figures are labelled separately. Taxes, exact sizes, model choices and final inclusions must be confirmed.",
+      "All figures are very approximate product prices in Canadian dollars, excluding installation. Installation is quoted separately. Confirm dimensions, glass, model choices, inclusions and taxes in your written quote.",
       "A door slab and a complete entry with sidelites or a transom are different assemblies. Glazing, finish, hardware, opening changes and surrounding repairs can materially change the scope.",
     ],
   },

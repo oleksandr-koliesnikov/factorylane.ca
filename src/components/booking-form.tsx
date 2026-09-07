@@ -45,6 +45,25 @@ export function BookingForm({ mode }: { mode: Mode }) {
   const alternatePath =
     (mode === "home" ? "/appointments/showroom/" : "/estimate/") +
     (alternateQuery.size ? "?" + alternateQuery.toString() : "");
+  const emailBody = [
+    mode === "home"
+      ? "Request: Free estimate at home"
+      : "Request: Showroom appointment",
+    `Name: ${data.name}`,
+    `Email: ${data.email}`,
+    `Phone: ${data.phone || "Not supplied"}`,
+    `Postal code: ${data.postal.toUpperCase()}`,
+    `Products: ${data.products}`,
+    ...(data.products.includes("Windows") ? [`Windows: ${data.quantity}`] : []),
+    ...(interest ? [`Interest: ${interest}`] : []),
+    ...(offer ? ["Offer: Free single roll blinds with 3+ windows"] : []),
+    `Preferred day: ${data.day || "Flexible"}`,
+    "",
+    data.message,
+    "",
+    "Please confirm the meeting time and location by reply.",
+  ].join("\r\n");
+  const emailHref = `mailto:${site.enquiryEmail}?subject=${encodeURIComponent(mode === "home" ? "Factory Lane — free home estimate request" : "Factory Lane — showroom appointment request")}&body=${encodeURIComponent(emailBody)}`;
   function update(
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
@@ -129,8 +148,8 @@ export function BookingForm({ mode }: { mode: Mode }) {
           <div className="preview-notice">
             <Icon name="ruler" size={18} />
             <span>
-              Form preview — details are not sent and appointments are not
-              reserved.
+              Send your request by email after reviewing the details. We will
+              confirm the appointment by reply.
             </span>
           </div>
           <div className="form-progress" aria-label={`Step ${step} of 3`}>
@@ -280,8 +299,8 @@ export function BookingForm({ mode }: { mode: Mode }) {
                     </select>
                   </label>
                   <p className="form-help">
-                    A preference only. Meeting availability and confirmation
-                    will be handled when booking opens.
+                    A preference only. We will confirm the time and meeting
+                    details by email.
                   </p>
                 </>
               )}
@@ -333,12 +352,18 @@ export function BookingForm({ mode }: { mode: Mode }) {
               </dl>
               {data.message && <p className="review-message">{data.message}</p>}
               <p className="form-help" role="status">
-                Your details have not been sent. This preview lets you review
-                the experience before online booking opens.
+                The button opens a prepared email. Press Send in your email app
+                to deliver your request; an appointment is confirmed only after
+                our reply.
               </p>
-              <button className="button primary" disabled>
-                Online booking coming soon
-              </button>
+              <a className="button primary" href={emailHref}>
+                Open email to send request <Icon size={18} />
+              </a>
+              <p className="form-help">
+                No email app configured? Write to{" "}
+                <a href={`mailto:${site.enquiryEmail}`}>{site.enquiryEmail}</a>{" "}
+                with the details above.
+              </p>
               <button
                 className="text-link edit-details"
                 onClick={() => setStep(1)}

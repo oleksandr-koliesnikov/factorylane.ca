@@ -1,5 +1,4 @@
 import type { ContentPage, ContentSection } from "../types";
-import references from "../window-references.json";
 const content: Record<string, ContentSection[]> = {
   "/windows/": [
     {
@@ -271,8 +270,8 @@ const content: Record<string, ContentSection[]> = {
             "A starting product comparison for the named configuration.",
           ],
           [
-            "Installed planning range",
-            "A broader reference whose scope must be checked.",
+            "Separate installation quote",
+            "Removal, installation, repairs and finishing priced for the actual opening.",
           ],
           [
             "Measured written estimate",
@@ -291,35 +290,19 @@ const content: Record<string, ContentSection[]> = {
   ],
   "/pricing/windows/": [
     {
-      title: "How the installed reference ranges differ from the calculator",
+      title: "Approximate product prices, with installation quoted separately",
       paragraphs: [
-        "The calculator below uses base reference records for the selected type and size band. The following tables contain separate installed planning ranges. Do not add the two figures together or treat a base reference as a complete installation quote.",
-        "All amounts are Canadian dollars. The labels describe reference categories rather than your measured specification. Glass, finish, opening condition, trim, access and project changes affect the final quote; tax treatment and exact inclusions must be confirmed in writing.",
+        "The calculator uses very approximate product-only ranges for the selected window type and size group. Installation is not included. Small, medium and large are planning labels, not approved measurement bands.",
+        "Your final product price depends on measured dimensions, glass, frame, finish and hardware. Removal, installation, repairs and finishing are assessed and quoted separately. Ask for a written breakdown and confirmation of applicable taxes.",
+      ],
+      links: [
+        { label: "Compare window types and dimensions", href: "/windows/" },
+        {
+          label: "Understand installation scope",
+          href: "/installation/window-replacement/",
+        },
       ],
     },
-    ...Object.entries(references)
-      .filter(([, v]) => v.installed.length)
-      .map(([path, v]) => ({
-        title: `${path
-          .split("/")[2]
-          .replaceAll("-", " ")
-          .replace(/^./, (letter) =>
-            letter.toUpperCase(),
-          )} installed planning ranges`,
-        table: {
-          headers: ["Reference configuration", "CAD planning range"],
-          rows: v.installed.map((r) => [
-            r.label,
-            `$${r.min.toLocaleString("en-CA")}–$${r.max.toLocaleString("en-CA")}${r.plus ? "+" : ""}`,
-          ]),
-        },
-        links: [
-          {
-            label: "View this window’s construction, options and sizes",
-            href: path,
-          },
-        ],
-      })),
   ],
   "/pricing/doors/": [
     {

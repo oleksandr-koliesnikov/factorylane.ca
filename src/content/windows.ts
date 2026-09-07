@@ -438,7 +438,7 @@ export const windowTechnologyPages: ContentPage[] = tech.map(
   }),
 );
 
-// Keep installed planning ranges separate from the product-only cost table.
+// Publish product-only prices; installation is quoted separately. Keep researched dimensions.
 for (const page of windowPages) {
   const ref = (
     references as Record<
@@ -450,20 +450,6 @@ for (const page of windowPages) {
     >
   )[page.path];
   if (!ref) continue;
-  if (ref.installed.length)
-    page.sections.splice(2, 0, {
-      title: "Installed price planning ranges",
-      paragraphs: [
-        "These Canadian-dollar references describe installed configuration groups. They are separate from the product-only calculator below. Confirm dimensions, taxes, exact inclusions and Factory Lane availability before treating any range as a quote.",
-      ],
-      table: {
-        headers: ["Configuration reference", "Installed range (CAD)"],
-        rows: ref.installed.map((r) => [
-          r.label,
-          `$${r.min.toLocaleString("en-CA")} – $${r.max.toLocaleString("en-CA")}${r.plus ? "+" : ""}`,
-        ]),
-      },
-    });
   if (ref.dimensions.length && page.path !== "/windows/casement/")
     page.sections.push({
       title: "Configuration size reference",

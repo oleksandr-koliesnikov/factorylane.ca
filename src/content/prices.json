@@ -321,7 +321,8 @@
     "min": 2560,
     "max": 4000,
     "basis": "Product reference",
-    "needsReview": true
+    "needsReview": false,
+    "note": "Large custom picture-window reference; confirm dimensions and glass before budgeting."
   },
   {
     "id": "W037",
@@ -437,6 +438,78 @@
     "size": "varies",
     "min": 1100,
     "max": 2400,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D011",
+    "product": "Sliding patio",
+    "size": "varies",
+    "min": 1800,
+    "max": 4000,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D012",
+    "product": "Sliding patio",
+    "size": "varies",
+    "min": 2200,
+    "max": 5000,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D013",
+    "product": "Garden",
+    "size": "varies",
+    "min": 3500,
+    "max": 4500,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D014",
+    "product": "Garden",
+    "size": "varies",
+    "min": 4200,
+    "max": 5500,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D015",
+    "product": "Bifold patio",
+    "size": "varies",
+    "min": 4500,
+    "max": 9000,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D016",
+    "product": "Bifold patio",
+    "size": "varies",
+    "min": 5500,
+    "max": 11000,
+    "basis": "Installed reference",
+    "needsReview": false
+  },
+  {
+    "id": "D017",
+    "product": "Tilt-and-turn patio",
+    "size": "varies",
+    "min": 3200,
+    "max": 6000,
+    "basis": "Product reference",
+    "needsReview": false
+  },
+  {
+    "id": "D018",
+    "product": "Tilt-and-turn patio",
+    "size": "varies",
+    "min": 4000,
+    "max": 7200,
     "basis": "Installed reference",
     "needsReview": false
   }

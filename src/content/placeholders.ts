@@ -100,8 +100,8 @@ export const evidencePages: ContentPage[] = [
     [
       "privacy",
       "Privacy information",
-      "The current preview keeps form entries in the page state while you review them. It does not submit those entries to a server, CRM or calendar. Reloading the page clears the draft.",
-      "Before live forms are enabled, this page will identify the business contact, purposes of collection, providers involved, retention approach and how a person can make a privacy enquiry.",
+      "Form entries remain in the page while you review them. The send button opens a prepared message in your email app addressed to olexkol44@gmail.com. Your details are sent only when you send that email. Reloading the website clears its draft.",
+      "Information you email is used to respond to your project or appointment enquiry. Your email provider and the recipient’s Gmail service process the message. For questions about information you shared, email olexkol44@gmail.com. Direct website submission, CRM and calendar integrations are not currently enabled.",
     ],
     [
       "cookies",
@@ -112,8 +112,8 @@ export const evidencePages: ContentPage[] = [
     [
       "terms",
       "Website & quotation terms",
-      "The current site is a project preview. Price ranges are planning references, and form review does not create an order, a binding quote or a confirmed appointment.",
-      "The final business terms, contracting entity, payment conditions and applicable product and installation documents must be confirmed before public launch.",
+      "Displayed prices are very approximate product-only references in Canadian dollars. Installation is quoted separately. Sending an enquiry does not create an order, a binding quote or a confirmed appointment.",
+      "Your written quotation and order documents must identify the products, installation scope, payment conditions and applicable warranty before an order is placed.",
     ],
   ].map(([slug, title, intro, detail]): ContentPage => ({
     path: `/${slug}/`,
@@ -126,12 +126,12 @@ export const evidencePages: ContentPage[] = [
     review:
       "Final policy must reflect the approved business details and live integrations.",
     sections: [
-      { title: "Current preview", paragraphs: [intro] },
+      { title: "How this website works", paragraphs: [intro] },
       {
-        title: "Before public launch",
+        title: "Contact and further details",
         paragraphs: [
           detail,
-          "Use the contact page to see the available enquiry routes. Live contact and delivery details will be added once confirmed.",
+          "Use the contact page or email olexkol44@gmail.com for an enquiry. Appointment times and arrival details require confirmation by reply.",
         ],
       },
     ],

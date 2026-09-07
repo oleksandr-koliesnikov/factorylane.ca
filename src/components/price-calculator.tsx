@@ -15,8 +15,10 @@ export function PriceGuide({
   doors?: boolean;
   product?: string;
 }) {
-  const available = prices.filter((p) =>
-    product ? p.product === product : p.id.startsWith(doors ? "D" : "W"),
+  const available = prices.filter(
+    (p) =>
+      p.basis === "Product reference" &&
+      (product ? p.product === product : p.id.startsWith(doors ? "D" : "W")),
   );
   const names = Array.from(new Set(available.map((r) => r.product)));
   const [choice, setChoice] = useState(names[0] ?? "");
@@ -25,9 +27,7 @@ export function PriceGuide({
   const options = available.filter((r) => r.product === choice);
   const record = options[option] ?? options[0];
   if (!record) return null;
-  const allRows = product
-    ? available
-    : prices.filter((p) => p.id.startsWith(doors ? "D" : "W"));
+  const allRows = product ? available : available;
   return (
     <section className="pricing-module" id="price-calculator">
       <div className="calculator">
@@ -39,13 +39,14 @@ export function PriceGuide({
             for your project.
           </h2>
           <p>
-            Canadian-dollar planning references. Confirm dimensions,
-            installation scope, taxes and selected options in your written
-            quote.
+            Very approximate product prices in Canadian dollars, excluding
+            installation. Installation is quoted separately. Dimensions, glass,
+            finishes and selected options affect the final price.
           </p>
           <p className="calculator-caution">
             This calculator does not place an order or provide a final quote.
           </p>
+          {record.note && <p className="calculator-caution">{record.note}</p>}
         </div>
         <div className="calculator-controls">
           <label>
@@ -99,7 +100,7 @@ export function PriceGuide({
             <span>
               {record.needsReview
                 ? "This range needs verification"
-                : "Reference range · " + record.basis.toLowerCase()}
+                : "Approximate product price · installation excluded"}
             </span>
             <strong>
               {record.needsReview
@@ -108,8 +109,8 @@ export function PriceGuide({
             </strong>
             <small>
               {record.needsReview
-                ? "This source outlier is excluded from calculations."
-                : "CAD · final scope and taxes to confirm"}
+                ? "This range is excluded until its scope is confirmed."
+                : "CAD · installation quoted separately · taxes to confirm"}
             </small>
           </div>
           {!doors && quantity >= 3 && (
@@ -129,10 +130,9 @@ export function PriceGuide({
               : "Window cost reference table"}
         </h3>
         <p className="table-description">
-          {doors
-            ? "Product and installed references are separate."
-            : "Size labels are reference groups, not approved measurement bands."}{" "}
-          Exact inclusions and taxes require confirmation.
+          Approximate product prices only. Installation is quoted separately.
+          Size labels are planning groups; exact dimensions, inclusions and
+          taxes require confirmation.
         </p>
         <div
           className="table-scroll"
@@ -142,20 +142,25 @@ export function PriceGuide({
         >
           <table>
             <caption>
-              Planning prices in CAD · reviewed September 5, 2026
+              Planning prices in CAD · reviewed September 7, 2026
             </caption>
             <thead>
               <tr>
                 <th scope="col">Product</th>
                 <th scope="col">{doors ? "Basis" : "Size group"}</th>
-                <th scope="col">Range</th>
+                <th scope="col">Product price · no installation</th>
               </tr>
             </thead>
             <tbody>
               {allRows.map((r) => (
                 <tr key={r.id}>
                   <th scope="row">{r.product}</th>
-                  <td>{doors ? r.basis : r.size}</td>
+                  <td>
+                    {doors ? "Product only" : r.size}
+                    {r.note && (
+                      <span className="price-scope-note">{r.note}</span>
+                    )}
+                  </td>
                   <td>
                     {r.needsReview
                       ? "Pending verification"

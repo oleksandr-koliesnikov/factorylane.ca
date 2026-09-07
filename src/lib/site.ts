@@ -1,6 +1,7 @@
 export const site = {
   name: "Factory Lane Windows & Doors",
   url: "https://factorylane.ca",
+  enquiryEmail: "olexkol44@gmail.com",
   hours: [
     ["Monday–Friday", "9:00 AM – 6:00 PM"],
     ["Saturday", "9:00 AM – 3:00 PM"],

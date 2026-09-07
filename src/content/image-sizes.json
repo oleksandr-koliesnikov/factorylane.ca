@@ -2,334 +2,186 @@
   "windows": {
     "width": 1600,
     "height": 1200,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "entry-doors": {
     "width": 1200,
     "height": 1600,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "patio-doors": {
     "width": 1600,
     "height": 1200,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "showroom": {
     "width": 1200,
     "height": 1600,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "manufacturing": {
     "width": 1600,
     "height": 1200,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "profile": {
     "width": 1200,
     "height": 1600,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "window-detail": {
     "width": 1600,
     "height": 1200,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "comfort-backyard": {
     "width": 1600,
     "height": 900,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-hopper": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-casement": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-awning": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-single-hung": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-double-hung": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-sliding": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-picture": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-fixed-casement": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-tilt-and-turn": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-bay": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/window-bow": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-steel-traditional": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-fiberglass-traditional": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-sliding": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-stacking": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-tilt-and-turn": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-bifold": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-garden": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-vinyl": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-aluminum": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-storm": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-garage": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-steel-modern": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-steel-contemporary": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-steel-craftsman": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-fiberglass-modern": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-fiberglass-contemporary": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-fiberglass-craftsman": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   },
   "illustrations/door-fiberglass-shaped": {
     "width": 1254,
     "height": 1254,
-    "widths": [
-      480,
-      800,
-      1200
-    ]
+    "widths": [480, 800, 1200]
   }
 }
