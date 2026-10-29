@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
+    "postbuild": "node scripts/install-gtm.mjs",
     "typecheck": "tsc --noEmit",
     "audit": "node --import tsx scripts/audit-content.ts",
     "format": "prettier --write src scripts/*.ts next.config.ts tsconfig.json package.json",
