@@ -1,3 +1,4 @@
+import { socialMetadata } from "@/lib/social-metadata";
 import { MediaImage } from "@/components/media-image";
 import type { Metadata } from "next";
 import Link from "@/components/site-link";
@@ -30,17 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: description(p.description),
     robots: pageRobots(Boolean(p.review)),
     alternates: { canonical: p.path },
-    openGraph: {
-      title: p.title,
-      description: description(p.description),
-      url: p.path,
-      images: [
-        {
-          url: `/media/${p.image ?? "windows"}.webp`,
-          alt: p.imageAlt ?? p.title,
-        },
-      ],
-    },
+    ...socialMetadata(p.path, p.title, description(p.description), {
+      url: `/media/${p.image ?? "windows"}.webp`,
+      alt: p.imageAlt ?? p.title,
+    }),
   };
 }
 export default async function Content({ params }: Props) {

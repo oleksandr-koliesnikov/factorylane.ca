@@ -1,3 +1,4 @@
+import { socialMetadata } from "@/lib/social-metadata";
 import type { Metadata } from "next";
 import Link from "@/components/site-link";
 import { pages } from "@/content";
@@ -6,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Find every Factory Lane window, door, comparison, price, installation and service-area page in the website sitemap.",
   alternates: { canonical: "/sitemap/" },
+  ...socialMetadata("/sitemap/", "Website Sitemap", "Find every Factory Lane window, door, comparison, price, installation and service-area page in the website sitemap."),
 };
 export default function Sitemap() {
   const groups = [

@@ -1,3 +1,4 @@
+import { socialMetadata } from "@/lib/social-metadata";
 import type { Metadata } from "next";
 import Link from "@/components/site-link";
 import { Actions } from "@/components/common";
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
   title: "Free Single Roll Blinds Offer",
   description: campaign.offer,
   alternates: { canonical: "/offers/" },
+  ...socialMetadata("/offers/", "Free Single Roll Blinds Offer", campaign.offer),
 };
 export default function Offers() {
   return (

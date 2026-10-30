@@ -1,3 +1,4 @@
+import { socialMetadata } from "@/lib/social-metadata";
 import { MediaImage } from "@/components/media-image";
 import type { Metadata } from "next";
 import Link from "@/components/site-link";
@@ -6,7 +7,7 @@ import { Actions } from "@/components/common";
 import { Catalog } from "@/components/catalog";
 import { Icon } from "@/components/icons";
 import { campaign, faqs, site } from "@/lib/site";
-export const metadata: Metadata = { alternates: { canonical: "/" } };
+export const metadata: Metadata = { alternates: { canonical: "/" }, ...socialMetadata("/", "Factory Lane | Factory-Direct Windows & Doors in Toronto & the GTA", "Explore factory-direct windows and doors with Factory Lane. Compare products in our showroom or start with a free estimate at your Toronto or GTA home.") };
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
