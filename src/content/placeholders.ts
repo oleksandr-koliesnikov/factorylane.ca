@@ -100,8 +100,8 @@ export const evidencePages: ContentPage[] = [
     [
       "privacy",
       "Privacy information",
-      "Form entries remain in the page while you review them. The send button opens a prepared message in your email app addressed to olexkol44@gmail.com. Your details are sent only when you send that email. Reloading the website clears its draft.",
-      "Information you email is used to respond to your project or appointment enquiry. Your email provider and the recipient’s Gmail service process the message. For questions about information you shared, email olexkol44@gmail.com. Direct website submission, CRM and calendar integrations are not currently enabled.",
+      "Form entries remain in the page while you review them. The send button opens a prepared message in your email app. Review its recipient and details before sending. Your details are sent only when you send that email. Reloading the website clears its draft.",
+      "Information you email is used to respond to your project or appointment enquiry. Your email provider and the recipient’s email provider process the message. For questions about information you shared, email info@factorylane.ca. Direct website submission, CRM and calendar integrations are not currently enabled.",
     ],
     [
       "cookies",
@@ -131,7 +131,7 @@ export const evidencePages: ContentPage[] = [
         title: "Contact and further details",
         paragraphs: [
           detail,
-          "Use the contact page or email olexkol44@gmail.com for an enquiry. Appointment times and arrival details require confirmation by reply.",
+          "Use the contact page or email info@factorylane.ca for an enquiry. Appointment times and arrival details require confirmation by reply.",
         ],
       },
     ],
