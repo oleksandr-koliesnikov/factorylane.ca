@@ -1,3 +1,4 @@
+import { socialMetadata } from "@/lib/social-metadata";
 import type { Metadata } from "next";
 import { BookingForm } from "@/components/booking-form";
 export const metadata: Metadata = {
@@ -5,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "Plan a Factory Lane showroom visit to compare full-size windows and doors, profiles, glass and finishes. Choose a preferred day and tell us about your project.",
   alternates: { canonical: "/appointments/showroom/" },
+  ...socialMetadata("/appointments/showroom/", "Book a Showroom Appointment", "Plan a Factory Lane showroom visit to compare full-size windows and doors, profiles, glass and finishes. Choose a preferred day and tell us about your project."),
 };
 export default function Appointment() {
   return <BookingForm mode="showroom" />;
