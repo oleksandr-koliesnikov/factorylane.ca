@@ -43,6 +43,10 @@ const serif = localFont({
 });
 export const metadata: Metadata = {
   metadataBase: new URL("https://factorylane.ca"),
+  other: {
+    "ahrefs-site-verification":
+      "02d04cb486a48d09891012cdb6ff15d6e9af1b5725295d580fda819ff01e3b97",
+  },
   title: {
     default:
       "Factory Lane | Factory-Direct Windows & Doors in Toronto & the GTA",
