@@ -161,6 +161,7 @@ export function Footer() {
       </div>
       <div className="footer-bottom container">
         <span>© {new Date().getFullYear()} Factory Lane Windows & Doors.</span>
+        <a href="https://koliesnikov.com/" target="_blank" rel="noopener noreferrer">Created by Oleksandr Koliesnikov</a>
         <nav aria-label="Website policies">
           <Link href="/privacy/">Privacy</Link>
           <Link href="/terms/">Terms</Link>
