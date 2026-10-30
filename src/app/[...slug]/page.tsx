@@ -12,6 +12,7 @@ import { Icon } from "@/components/icons";
 import { site } from "@/lib/site";
 import { WindowDiagram } from "@/components/window-diagram";
 import { pageRobots } from "@/lib/indexing";
+import { PublicContactText } from "@/components/public-contact-text";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return pages.map((p) => ({ slug: p.path.split("/").filter(Boolean) }));
@@ -142,7 +143,7 @@ export default async function Content({ params }: Props) {
           <div>
             <p className="eyebrow">{p.eyebrow}</p>
             <h1>{p.title}</h1>
-            <p className="content-intro">{p.intro}</p>
+            <p className="content-intro"><PublicContactText text={p.intro} /></p>
             <Actions context={p.title} />
           </div>
           {p.image && (
@@ -235,7 +236,7 @@ export default async function Content({ params }: Props) {
                 </span>
                 <h2>{section.title}</h2>
                 {section.paragraphs?.map((text, j) => (
-                  <p key={j}>{text}</p>
+                  <p key={j}><PublicContactText text={text} /></p>
                 ))}
                 {section.video && (
                   <figure className="section-video">
